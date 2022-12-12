@@ -11,6 +11,7 @@ export default withAuth(
   config({
     db: {
       provider: 'postgresql',
+      // @ts-ignore
       url: process.env.POSTGRES_URI,
       idField: { kind: 'autoincrement' }
     },
